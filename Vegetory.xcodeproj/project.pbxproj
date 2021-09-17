@@ -40,6 +40,12 @@
 		016F6CAB26F4A7150032B550 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* MainView.swift */; };
 		016F6CAC26F4A7150032B550 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* MainView.swift */; };
 		016F6CAD26F4A7150032B550 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* MainView.swift */; };
+		016F6CB026F5282B0032B550 /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAF26F5282B0032B550 /* ExtensionsString.swift */; };
+		016F6CB126F5282B0032B550 /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAF26F5282B0032B550 /* ExtensionsString.swift */; };
+		016F6CB226F5282B0032B550 /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAF26F5282B0032B550 /* ExtensionsString.swift */; };
+		016F6CB426F52EC50032B550 /* ExtensionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CB326F52EC50032B550 /* ExtensionList.swift */; };
+		016F6CB526F52EC50032B550 /* ExtensionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CB326F52EC50032B550 /* ExtensionList.swift */; };
+		016F6CB626F52EC50032B550 /* ExtensionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CB326F52EC50032B550 /* ExtensionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,8 @@
 		016F6C9D26F49C7A0032B550 /* Eulyoo1945-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eulyoo1945-Regular.otf"; sourceTree = "<group>"; };
 		016F6CA526F4A5120032B550 /* Blurview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blurview.swift; sourceTree = "<group>"; };
 		016F6CAA26F4A7150032B550 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		016F6CAF26F5282B0032B550 /* ExtensionsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsString.swift; sourceTree = "<group>"; };
+		016F6CB326F52EC50032B550 /* ExtensionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		016F6C5326F48D4E0032B550 /* Vegetory */ = {
 			isa = PBXGroup;
 			children = (
+				016F6CAE26F5281F0032B550 /* Extensions */,
 				016F6C8B26F49AB30032B550 /* Fonts */,
 				016F6C8526F4920C0032B550 /* VM */,
 				016F6C8126F491C70032B550 /* Model */,
@@ -249,6 +258,15 @@
 				016F6CAA26F4A7150032B550 /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		016F6CAE26F5281F0032B550 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				016F6CAF26F5282B0032B550 /* ExtensionsString.swift */,
+				016F6CB326F52EC50032B550 /* ExtensionList.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,9 +418,11 @@
 			files = (
 				016F6C5726F48D4E0032B550 /* ContentView.swift in Sources */,
 				016F6CAB26F4A7150032B550 /* MainView.swift in Sources */,
+				016F6CB026F5282B0032B550 /* ExtensionsString.swift in Sources */,
 				016F6CA626F4A5120032B550 /* Blurview.swift in Sources */,
 				016F6C8826F492600032B550 /* TopBarModel.swift in Sources */,
 				016F6C8426F491F70032B550 /* TopBarView.swift in Sources */,
+				016F6CB426F52EC50032B550 /* ExtensionList.swift in Sources */,
 				016F6C5526F48D4E0032B550 /* VegetoryApp.swift in Sources */,
 				016F6C8A26F4982D0032B550 /* TopBarItem.swift in Sources */,
 			);
@@ -414,6 +434,8 @@
 			files = (
 				016F6C6726F48D4F0032B550 /* VegetoryTests.swift in Sources */,
 				016F6CAC26F4A7150032B550 /* MainView.swift in Sources */,
+				016F6CB126F5282B0032B550 /* ExtensionsString.swift in Sources */,
+				016F6CB526F52EC50032B550 /* ExtensionList.swift in Sources */,
 				016F6CA726F4A5120032B550 /* Blurview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +446,8 @@
 			files = (
 				016F6C7226F48D4F0032B550 /* VegetoryUITests.swift in Sources */,
 				016F6CAD26F4A7150032B550 /* MainView.swift in Sources */,
+				016F6CB226F5282B0032B550 /* ExtensionsString.swift in Sources */,
+				016F6CB626F52EC50032B550 /* ExtensionList.swift in Sources */,
 				016F6CA826F4A5120032B550 /* Blurview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

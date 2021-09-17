@@ -7,22 +7,29 @@
 
 import SwiftUI
 
-enum TopBarType {
-    case MAIN, POST, PROFILE
+enum TopBarType : Int {
+    case MAIN = 0
+    case POST = 1
+    case PROFILE = 2
 }
 
+
 struct TopBarView: View {
-    @State var topbarList = [
-        TopBarModel(titleNativ: "공지사항", titleEng: "Notice"),
-        TopBarModel(titleNativ: "설정", titleEng: "Setting")
-    ]
+    
+    var setType : TopBarType
     var setHeight : CGFloat
     var setWhenClick : (TopBarModel) -> Void?
-    var setType : TopBarType
     
     private func putListByType(type : TopBarType) -> [TopBarModel] {
-        return swtch type {
-            case TopBarType.MAIN :
+        switch type {
+        case TopBarType.MAIN:
+            return TopBarModel.TopBarList_MAIN()
+        case TopBarType.POST:
+            return TopBarModel.TopBarList_POST()
+        case TopBarType.PROFILE:
+            return TopBarModel.TopBarList_PROFILE()
+        default:
+            return TopBarModel.TopBarList_MAIN()
         }
     }
     
@@ -33,7 +40,7 @@ struct TopBarView: View {
             content: {
                 Divider()
                 HStack{
-                    ForEach(topbarList){ item in
+                    ForEach(putListByType(type: setType)){ item in
                         TopBarItem(
                             setModel: item,
                             setHeight: (setHeight / 20) * 2,

@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016F6C5526F48D4E0032B550 /* VegetoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6C5426F48D4E0032B550 /* VegetoryApp.swift */; };
+		016F6C5726F48D4E0032B550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6C5626F48D4E0032B550 /* ContentView.swift */; };
+		016F6C5926F48D4F0032B550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016F6C5826F48D4F0032B550 /* Assets.xcassets */; };
+		016F6C5C26F48D4F0032B550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016F6C5B26F48D4F0032B550 /* Preview Assets.xcassets */; };
+		016F6C6726F48D4F0032B550 /* VegetoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6C6626F48D4F0032B550 /* VegetoryTests.swift */; };
+		016F6C7226F48D4F0032B550 /* VegetoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6C7126F48D4F0032B550 /* VegetoryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		016F6C6326F48D4F0032B550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016F6C4926F48D4E0032B550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016F6C5026F48D4E0032B550;
+			remoteInfo = Vegetory;
+		};
+		016F6C6E26F48D4F0032B550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016F6C4926F48D4E0032B550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016F6C5026F48D4E0032B550;
+			remoteInfo = Vegetory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016F6C5126F48D4E0032B550 /* Vegetory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vegetory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		016F6C5426F48D4E0032B550 /* VegetoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetoryApp.swift; sourceTree = "<group>"; };
+		016F6C5626F48D4E0032B550 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		016F6C5826F48D4F0032B550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		016F6C5B26F48D4F0032B550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		016F6C5D26F48D4F0032B550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		016F6C6226F48D4F0032B550 /* VegetoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegetoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		016F6C6626F48D4F0032B550 /* VegetoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetoryTests.swift; sourceTree = "<group>"; };
+		016F6C6826F48D4F0032B550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		016F6C6D26F48D4F0032B550 /* VegetoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegetoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		016F6C7126F48D4F0032B550 /* VegetoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetoryUITests.swift; sourceTree = "<group>"; };
+		016F6C7326F48D4F0032B550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		016F6C4E26F48D4E0032B550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016F6C5F26F48D4F0032B550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016F6C6A26F48D4F0032B550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016F6C4826F48D4E0032B550 = {
+			isa = PBXGroup;
+			children = (
+				016F6C5326F48D4E0032B550 /* Vegetory */,
+				016F6C6526F48D4F0032B550 /* VegetoryTests */,
+				016F6C7026F48D4F0032B550 /* VegetoryUITests */,
+				016F6C5226F48D4E0032B550 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		016F6C5226F48D4E0032B550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				016F6C5126F48D4E0032B550 /* Vegetory.app */,
+				016F6C6226F48D4F0032B550 /* VegetoryTests.xctest */,
+				016F6C6D26F48D4F0032B550 /* VegetoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		016F6C5326F48D4E0032B550 /* Vegetory */ = {
+			isa = PBXGroup;
+			children = (
+				016F6C5426F48D4E0032B550 /* VegetoryApp.swift */,
+				016F6C5626F48D4E0032B550 /* ContentView.swift */,
+				016F6C5826F48D4F0032B550 /* Assets.xcassets */,
+				016F6C5D26F48D4F0032B550 /* Info.plist */,
+				016F6C5A26F48D4F0032B550 /* Preview Content */,
+			);
+			path = Vegetory;
+			sourceTree = "<group>";
+		};
+		016F6C5A26F48D4F0032B550 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				016F6C5B26F48D4F0032B550 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		016F6C6526F48D4F0032B550 /* VegetoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				016F6C6626F48D4F0032B550 /* VegetoryTests.swift */,
+				016F6C6826F48D4F0032B550 /* Info.plist */,
+			);
+			path = VegetoryTests;
+			sourceTree = "<group>";
+		};
+		016F6C7026F48D4F0032B550 /* VegetoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				016F6C7126F48D4F0032B550 /* VegetoryUITests.swift */,
+				016F6C7326F48D4F0032B550 /* Info.plist */,
+			);
+			path = VegetoryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		016F6C5026F48D4E0032B550 /* Vegetory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016F6C7626F48D4F0032B550 /* Build configuration list for PBXNativeTarget "Vegetory" */;
+			buildPhases = (
+				016F6C4D26F48D4E0032B550 /* Sources */,
+				016F6C4E26F48D4E0032B550 /* Frameworks */,
+				016F6C4F26F48D4E0032B550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vegetory;
+			productName = Vegetory;
+			productReference = 016F6C5126F48D4E0032B550 /* Vegetory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		016F6C6126F48D4F0032B550 /* VegetoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016F6C7926F48D4F0032B550 /* Build configuration list for PBXNativeTarget "VegetoryTests" */;
+			buildPhases = (
+				016F6C5E26F48D4F0032B550 /* Sources */,
+				016F6C5F26F48D4F0032B550 /* Frameworks */,
+				016F6C6026F48D4F0032B550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				016F6C6426F48D4F0032B550 /* PBXTargetDependency */,
+			);
+			name = VegetoryTests;
+			productName = VegetoryTests;
+			productReference = 016F6C6226F48D4F0032B550 /* VegetoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		016F6C6C26F48D4F0032B550 /* VegetoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016F6C7C26F48D4F0032B550 /* Build configuration list for PBXNativeTarget "VegetoryUITests" */;
+			buildPhases = (
+				016F6C6926F48D4F0032B550 /* Sources */,
+				016F6C6A26F48D4F0032B550 /* Frameworks */,
+				016F6C6B26F48D4F0032B550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				016F6C6F26F48D4F0032B550 /* PBXTargetDependency */,
+			);
+			name = VegetoryUITests;
+			productName = VegetoryUITests;
+			productReference = 016F6C6D26F48D4F0032B550 /* VegetoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		016F6C4926F48D4E0032B550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					016F6C5026F48D4E0032B550 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					016F6C6126F48D4F0032B550 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 016F6C5026F48D4E0032B550;
+					};
+					016F6C6C26F48D4F0032B550 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 016F6C5026F48D4E0032B550;
+					};
+				};
+			};
+			buildConfigurationList = 016F6C4C26F48D4E0032B550 /* Build configuration list for PBXProject "Vegetory" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 016F6C4826F48D4E0032B550;
+			productRefGroup = 016F6C5226F48D4E0032B550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				016F6C5026F48D4E0032B550 /* Vegetory */,
+				016F6C6126F48D4F0032B550 /* VegetoryTests */,
+				016F6C6C26F48D4F0032B550 /* VegetoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		016F6C4F26F48D4E0032B550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016F6C5C26F48D4F0032B550 /* Preview Assets.xcassets in Resources */,
+				016F6C5926F48D4F0032B550 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016F6C6026F48D4F0032B550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016F6C6B26F48D4F0032B550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		016F6C4D26F48D4E0032B550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016F6C5726F48D4E0032B550 /* ContentView.swift in Sources */,
+				016F6C5526F48D4E0032B550 /* VegetoryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016F6C5E26F48D4F0032B550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016F6C6726F48D4F0032B550 /* VegetoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016F6C6926F48D4F0032B550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016F6C7226F48D4F0032B550 /* VegetoryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		016F6C6426F48D4F0032B550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016F6C5026F48D4E0032B550 /* Vegetory */;
+			targetProxy = 016F6C6326F48D4F0032B550 /* PBXContainerItemProxy */;
+		};
+		016F6C6F26F48D4F0032B550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016F6C5026F48D4E0032B550 /* Vegetory */;
+			targetProxy = 016F6C6E26F48D4F0032B550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		016F6C7426F48D4F0032B550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		016F6C7526F48D4F0032B550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		016F6C7726F48D4F0032B550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Vegetory/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Vegetory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavss.Vegetory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		016F6C7826F48D4F0032B550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Vegetory/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Vegetory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavss.Vegetory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		016F6C7A26F48D4F0032B550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegetoryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavss.VegetoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vegetory.app/Vegetory";
+			};
+			name = Debug;
+		};
+		016F6C7B26F48D4F0032B550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegetoryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavss.VegetoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vegetory.app/Vegetory";
+			};
+			name = Release;
+		};
+		016F6C7D26F48D4F0032B550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegetoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavss.VegetoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vegetory;
+			};
+			name = Debug;
+		};
+		016F6C7E26F48D4F0032B550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VegetoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cavss.VegetoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vegetory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		016F6C4C26F48D4E0032B550 /* Build configuration list for PBXProject "Vegetory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016F6C7426F48D4F0032B550 /* Debug */,
+				016F6C7526F48D4F0032B550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016F6C7626F48D4F0032B550 /* Build configuration list for PBXNativeTarget "Vegetory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016F6C7726F48D4F0032B550 /* Debug */,
+				016F6C7826F48D4F0032B550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016F6C7926F48D4F0032B550 /* Build configuration list for PBXNativeTarget "VegetoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016F6C7A26F48D4F0032B550 /* Debug */,
+				016F6C7B26F48D4F0032B550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016F6C7C26F48D4F0032B550 /* Build configuration list for PBXNativeTarget "VegetoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016F6C7D26F48D4F0032B550 /* Debug */,
+				016F6C7E26F48D4F0032B550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 016F6C4926F48D4E0032B550 /* Project object */;
+}

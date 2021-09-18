@@ -43,7 +43,7 @@ struct TopBarView: View {
                     ForEach(putListByType(type: setType)){ item in
                         TopBarItem(
                             setModel: item,
-                            setHeight: (setHeight / 20) * 2,
+                            setHeight: (setHeight / 20) * 1,
                             setFontSize: 20
                         ) { clickedItem in
                             setWhenClick(clickedItem)
@@ -67,7 +67,7 @@ struct TopBarView: View {
             minWidth: 0,
             maxWidth: .infinity,
             minHeight: 0,
-            maxHeight: (setHeight / 20) * 2,
+            maxHeight: (setHeight / 20) * 1,
             alignment: .top
         )
     }

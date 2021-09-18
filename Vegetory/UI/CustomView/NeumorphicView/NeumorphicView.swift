@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 struct NeomorphismView<GetView : View> : View {
+    
     private var getView : () -> GetView
     private var getWidth : CGFloat
     private var getHeight : CGFloat

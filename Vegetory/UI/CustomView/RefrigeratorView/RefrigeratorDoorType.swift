@@ -7,6 +7,7 @@
 
 import Foundation
 
-enum DoorType {
-    case LEFT, RIGHT
+enum DoorType : Int{
+    case LEFT = -1
+    case RIGHT = 1
 }

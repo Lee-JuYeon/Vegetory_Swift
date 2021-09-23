@@ -11,32 +11,7 @@ struct WallPaperview: View {
     
     
     @ObservedObject var mainVM = MainViewVM()
-    
-    private func setTopBarClickEvent(model : TopBarModel){
-        switch model.titleEng {
-        case "NOTICE":
-            print("NOTICE가 클릭됨")
-        case "SETTING":
-            print("SETTING이 클릭됨")
-        default:
-            print("개발잡니다.")
-        }
-    }
-    
-    private func setMenuClickEvent(model : MainMenuModel){
-        switch model.title {
-        case "영수증":
-            print("영수증이 클릭됨")
-        case "밀키트":
-            print("밀키트가 클릭됨")
-        case "완제품":
-            print("완제품이 클릭됨")
-        case "이용내역":
-            print("이용내역보기")
-        default:
-            print("디폴트")
-        }
-    }
+    @State private var showPopupView : Bool = false
     
     var body: some View {
         GeometryReader{ geo in
@@ -54,20 +29,10 @@ struct WallPaperview: View {
                             }
                         )
                         
-                        RefrigeratorView(
-                            setWidth: 160,
-                            setHeight: 325,
-                            setSide : 20,
-                            setDoorType : .LEFT
+                        MainView(
+                            setGeo: geo
                         )
-                        
-                        
-                        MainMenuView(
-                            setGeo: geo,
-                            setWhenClick: { item in
-                                setMenuClickEvent(model: item)
-                            }
-                        )
+                       
                     }
                 )
                 .frame(
@@ -78,6 +43,23 @@ struct WallPaperview: View {
                     alignment: .top
                 )
                 .background(Color("LightBackground"))
+                
+                PopupView(
+                    setTitle: "title타이틀123",
+                    setShow: $showPopupView,
+                    setWhenDismiss: {
+                        print("뷰가 사라짐")
+                    },
+                    setContent: {
+                        Rectangle()
+                            .stroke(Color.yellow, lineWidth: 2)
+                            .frame(
+                                width: 100,
+                                height: 100,
+                                alignment: .center
+                            )
+                    }
+                )
             }
             .frame(
                 minWidth: 0,
@@ -88,5 +70,18 @@ struct WallPaperview: View {
             )
         }
     }
+    
+    private func setTopBarClickEvent(model : TopBarModel){
+        switch model.titleEng {
+        case "NOTICE":
+            print("NOTICE가 클릭됨")
+            self.showPopupView = !self.showPopupView
+        case "SETTING":
+            print("SETTING이 클릭됨")
+        default:
+            print("개발잡니다.")
+        }
+    }
+    
 }
 

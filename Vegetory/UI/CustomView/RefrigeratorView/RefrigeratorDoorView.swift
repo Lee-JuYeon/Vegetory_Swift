@@ -15,7 +15,15 @@ struct RefrigeratorDoorView : View {
     private let getDoorImage : String
     private let getDoorType : DoorType
     @State private var getSide : CGFloat
+    
+    @State var leftOffset: CGFloat = 0
+    @State var leftDegree:Double = 90
+    
+    @State var rightOffset:CGFloat = 0
+    @State var rightDegree:Double = -90
 
+    @State var frontZIndex : Double = 1
+    @State var backZIndex : Double = 0
     init(
         setWidth : CGFloat,
         setHeight : CGFloat,
@@ -28,53 +36,92 @@ struct RefrigeratorDoorView : View {
         self.getSide = 0
         self.getDoorType = setDoorType
         self.getDoorImage = setDoorImage
+        
+        self.rightOffset = setWidth / 2
     }
+    
+    private let setPerspective : CGFloat = -0.1
           
     var body: some View {
         ZStack{
-            Spacer()
+            // BACK SIDE
             ZStack{
+                Text("뒷면(Behind View)")
+                    .background(Color.white)
+                    .frame(
+                        width: getWidth,
+                        height: getHeight,
+                        alignment: .center
+                    )
                 Rectangle()
-                    .fill(Color.red)
+                    .stroke(Color("SideFrameColour"), lineWidth : 3)
                     .frame(
                         width: getWidth,
                         height: getHeight,
                         alignment: .center
                     )
             }
+            .zIndex(self.backZIndex)
             .rotation3DEffect(
                 .degrees(self.degree), // 몇도를 회전된 상태를 보여줄거냐
                 axis: (x: 0, y:CGFloat(self.getDoorType.rawValue), z: 0), // -y, -x축으로 회전시킬것이다.
+//                anchor: getDoorType(type: getDoorType),
                 anchor: getDoorType(type: getDoorType),
                 anchorZ:0,
-                perspective: -0.1 // 원근법
-            )
-            // width는 x축으로 n만큼 이동, height는 y축으로 n만큼 이동, CGSize로 사용.
-            .offset(x: 0, y: 0)
-            Spacer()
-            
-            Spacer()
-            ZStack{
-                Image(getDoorImage)
-                    .resizable()
-                    .frame(
-                        width: getWidth,
-                        height: getHeight,
-                        alignment: .center
-                    )
-            }
-            .brightness(-0.05) // 명암조절
-            .rotation3DEffect(
-                .degrees(self.degree), // 몇도를 회전된 상태를 보여줄거냐
-                axis: (x: 0, y:CGFloat(self.getDoorType.rawValue), z: 0), // -y, -x축으로 회전시킬것이다.
-                anchor: getDoorType(type: getDoorType),
-                anchorZ:0,
-                perspective: -0.1 // 원근법
+                perspective: setPerspective // 원근법
             )
             // width는 x축으로 n만큼 이동, height는 y축으로 n만큼 이동, CGSize로 사용.
             .offset(
-                x: getSide, y: 0
+                CGSize(width: 0,
+                       height: 0)
             )
+            
+            // Right SIDE
+            Rectangle()
+                .fill(Color("SideFrameColour"))
+                .frame(
+                    width: 20,
+                    height: getHeight,
+                    alignment: .center
+                )
+                .zIndex(2)
+                .rotation3DEffect(
+                    .degrees(self.rightDegree),
+                    axis: (x: 0, y: 1, z: 0),
+                    anchor: UnitPoint.leading,
+                    anchorZ: 0,
+                    perspective: 0
+                )
+                .offset(
+                    CGSize(
+                        width: rightOffset,
+                        height: 0
+                    )
+                )
+            
+            // FRONT SIDE
+            Image(getDoorImage)
+                .resizable()
+                .frame(
+                    width: getWidth,
+                    height: getHeight,
+                    alignment: .center
+                )
+                .zIndex(self.frontZIndex)
+                .brightness(-0.05) // 명암조절
+                .rotation3DEffect(
+                    .degrees(self.degree), // 몇도를 회전된 상태를 보여줄거냐
+                    axis: (x: 0, y:CGFloat(self.getDoorType.rawValue), z: 0), // -y, -x축으로 회전시킬것이다.
+    //                anchor: getDoorType(type: getDoorType),
+                    anchor: getDoorType(type: getDoorType),
+                    anchorZ:0,
+                    perspective: setPerspective // 원근법
+                )
+                // width는 x축으로 n만큼 이동, height는 y축으로 n만큼 이동, CGSize로 사용.
+                .offset(
+                    x: getSide, y: 0
+                )
+            Spacer()
             
         }
         .gesture(
@@ -107,18 +154,21 @@ struct RefrigeratorDoorView : View {
          
         1도당 3.6DP로 설정한다. ( 더 넓게 쓰려면 반값인 1.8로.
         */
-        let valueToCGFloat = Double(value.x * 3)
+        let valueToDegree = Double(value.x * 3)
         
         switch getDoorType {
         case .LEFT:
-            if (valueToCGFloat > -180 && valueToCGFloat < 1 ) {
-//                print("left : \(valueToCGFloat)")
-                self.degree = valueToCGFloat
+            if (valueToDegree > -180 && valueToDegree < 1 ) {
+                self.degree = valueToDegree
+                self.leftDegree = -(valueToDegree)
+//                print("left : \(self.leftDegree)")
+                self.rightOffset = CGFloat(valueToDegree)
+                print("left : \(self.rightOffset)")
             }
         case .RIGHT:
-            if (valueToCGFloat > -180 && valueToCGFloat < 1 ) {
+            if (valueToDegree > -180 && valueToDegree < 1 ) {
 //                print("right : \(valueToCGFloat)")
-                self.degree = valueToCGFloat
+                self.degree = valueToDegree
             }
         }
     }
@@ -139,22 +189,34 @@ struct RefrigeratorDoorView : View {
         정육면체를 가지고 한번 0 -> 90, 90 -> 180도로 천천히 돌려보면 무슨 말인지 알 듯 싶다.
         */
         let valueToFloat = Double(value.x * 3)
-        let baseDegree = valueToFloat / -4.5
 
         if valueToFloat > -90 && valueToFloat < 0 {
+            let baseDegree = valueToFloat / 4.5
             let convertedDegree = CGFloat(baseDegree)
             self.getSide = convertedDegree
-            print("90 : \(convertedDegree)")
+            self.frontZIndex = 1
+            self.backZIndex = 0
+            self.rightDegree = valueToFloat + 90
         }else if (valueToFloat > -180 && valueToFloat < -90) {
             /*
              1, (baseDegree-20)에서 20을 빼주지 않으면 31, 32, 33, ....50까지 간다.
              즉, 50dp까지 가게 되는 것이다. 고로 0-20dp를 유지시키기 위해 -20을 해주었다.
+             
              2, (baseDegree-20) - 20에서 왜 20을 더 빼주었냐면, int의 역행을 위해서인데,
              기존 값에서 20을 뺴면 몫이 20부터 0까지 역행하기 때문에 역행하는 애니메이션에 적합하다.
+             
+             3. 위와 달리 baseDegree가 +4.5가 아닌,  -4.5로 나뉜다
+             이에 대한 이유는, frontView가 offset +x방향이 아닌, -x방향으로 이동해야하기 때문이다.
+             (추가적으로 왼쪽으로 회전할 경우 0 -> -90로 이동하기 때문에 -4.5로 나누면 offSet x의 이동방향이 정해지기 떄문)
+             
              */
+            let baseDegree = valueToFloat / -4.5
             let convertedDegree = CGFloat((baseDegree - 20) - 20)
             self.getSide = convertedDegree
-            print("180 : \(convertedDegree)")
+            self.frontZIndex = 0
+            self.backZIndex = 1
+            self.rightDegree = valueToFloat - 90
+//            print("180 : \(convertedDegree)")
         }
     }
     

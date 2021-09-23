@@ -42,6 +42,36 @@ struct RefrigeratorView : View {
         
     var body: some View {
         ZStack{
+            GridView(
+                setDivide: 2,
+                setGridType: GridType.VERTICAL,
+                setItemtype: .flexible(minimum: 20),
+                setSpacing: 5,
+                setContent: {
+                    ForEach(RefrigeratorBucketModel.RefrigeratorBucketList()){ model in
+                        RefrigeratorBucketView(
+                            setModel: model,
+                            setWidth: getWidth / 2,
+                            setHeight: getHeight / 6
+                        )
+                    }
+                }
+            )
+            .frame(
+                minWidth: getWidth,
+                idealWidth: getWidth,
+                maxWidth: getWidth,
+                minHeight: 0,
+                idealHeight: getHeight,
+                maxHeight: .infinity,
+                alignment: .center
+            )
+            .background(
+                Rectangle()
+                    .fill(Color.white)
+                    .border(Color("SideFrameColour"), width: 5)
+            )
+            
             HStack(
                 alignment : VerticalAlignment.center,
                 spacing: 0
@@ -57,7 +87,7 @@ struct RefrigeratorView : View {
                     setWidth: getWidth / 2,
                     setHeight: getHeight,
                     setSide: getSide,
-                    setDoorType: .LEFT,
+                    setDoorType: .RIGHT,
                     setDoorImage: "right"
                 )
             }

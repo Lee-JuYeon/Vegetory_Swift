@@ -25,7 +25,7 @@ struct TopBarItem: View {
                 setWhenClick(setModel)
             }
             .onAppear{
-               checkFonts()
+//               checkFonts()
             }
     }
     

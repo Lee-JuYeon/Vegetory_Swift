@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ReceiptListItem: View {
+struct ReceiptProductCell: View {
     var productImage : String
     var productName : String
     var productPrice : Int

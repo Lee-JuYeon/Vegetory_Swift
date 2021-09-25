@@ -51,7 +51,7 @@ struct IsometricView<GetView: View>: View {
                         )
                     )
                 )
-                .offset(x: 0, y: -getSize/2)
+                .offset(x: 0, y: -getSize/2 + 1)
             
             //right
             Rectangle()

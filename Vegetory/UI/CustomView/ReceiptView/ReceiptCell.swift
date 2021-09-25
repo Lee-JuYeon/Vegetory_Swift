@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-struct ReceiptItemView: View {
+struct ReceiptCell: View {
+    
     var getModel : ReceiptModel
     var getWhenItemClick : (String) -> Void
-    
-
     
     var body: some View {
         VStack(alignment: HorizontalAlignment.center){
@@ -22,7 +21,7 @@ struct ReceiptItemView: View {
         
             LazyVStack(alignment : HorizontalAlignment.leading){
                 ForEach(getModel.shoppingList){ model in
-                    ReceiptListItem(
+                    ReceiptProductCell(
                         productImage: model.productImage,
                         productName: model.productTitle,
                         productPrice: model.productPrice,
@@ -33,11 +32,12 @@ struct ReceiptItemView: View {
 
             
             Text("총합 : \(getTotalPrice(list: getModel))원")
+            Text("자세히 보기")
+                .onTapGesture {
+                    getWhenItemClick(getModel.userUID)
+                }
         }
         .padding(.horizontal, 10)
-        .onTapGesture {
-            getWhenItemClick(getModel.userUID)
-        }
     }
     
     private func getTotalPrice(list : ReceiptModel) -> Int{

@@ -7,6 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0119089726FC170400EDA793 /* RefrigeratorBucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089626FC170400EDA793 /* RefrigeratorBucketView.swift */; };
+		0119089826FC170400EDA793 /* RefrigeratorBucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089626FC170400EDA793 /* RefrigeratorBucketView.swift */; };
+		0119089926FC170400EDA793 /* RefrigeratorBucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089626FC170400EDA793 /* RefrigeratorBucketView.swift */; };
+		0119089B26FC173D00EDA793 /* RefrigeratorBucketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089A26FC173D00EDA793 /* RefrigeratorBucketModel.swift */; };
+		0119089C26FC173D00EDA793 /* RefrigeratorBucketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089A26FC173D00EDA793 /* RefrigeratorBucketModel.swift */; };
+		0119089D26FC173D00EDA793 /* RefrigeratorBucketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089A26FC173D00EDA793 /* RefrigeratorBucketModel.swift */; };
+		011908A026FC189500EDA793 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089F26FC189500EDA793 /* MainView.swift */; };
+		011908A126FC189500EDA793 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089F26FC189500EDA793 /* MainView.swift */; };
+		011908A226FC189500EDA793 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119089F26FC189500EDA793 /* MainView.swift */; };
+		011908A526FC279800EDA793 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908A426FC279800EDA793 /* PopupView.swift */; };
+		011908A626FC279800EDA793 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908A426FC279800EDA793 /* PopupView.swift */; };
+		011908A726FC279800EDA793 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908A426FC279800EDA793 /* PopupView.swift */; };
+		011908A926FC97DB00EDA793 /* PopupViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908A826FC97DB00EDA793 /* PopupViewModifier.swift */; };
+		011908AA26FC97DB00EDA793 /* PopupViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908A826FC97DB00EDA793 /* PopupViewModifier.swift */; };
+		011908AB26FC97DB00EDA793 /* PopupViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908A826FC97DB00EDA793 /* PopupViewModifier.swift */; };
+		011908AD26FCA4C500EDA793 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908AC26FCA4C500EDA793 /* ExtensionsView.swift */; };
+		011908AE26FCA4C500EDA793 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908AC26FCA4C500EDA793 /* ExtensionsView.swift */; };
+		011908AF26FCA4C500EDA793 /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908AC26FCA4C500EDA793 /* ExtensionsView.swift */; };
+		011908B126FCA52A00EDA793 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908B026FCA52A00EDA793 /* RoundedCorner.swift */; };
+		011908B226FCA52A00EDA793 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908B026FCA52A00EDA793 /* RoundedCorner.swift */; };
+		011908B326FCA52A00EDA793 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908B026FCA52A00EDA793 /* RoundedCorner.swift */; };
+		011908B726FD099E00EDA793 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908B626FD099E00EDA793 /* ReceiptModel.swift */; };
+		011908B826FD099E00EDA793 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908B626FD099E00EDA793 /* ReceiptModel.swift */; };
+		011908B926FD099E00EDA793 /* ReceiptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908B626FD099E00EDA793 /* ReceiptModel.swift */; };
+		011908BB26FD0C3700EDA793 /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908BA26FD0C3700EDA793 /* ReceiptView.swift */; };
+		011908BC26FD0C3700EDA793 /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908BA26FD0C3700EDA793 /* ReceiptView.swift */; };
+		011908BD26FD0C3700EDA793 /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908BA26FD0C3700EDA793 /* ReceiptView.swift */; };
+		011908BF26FD252A00EDA793 /* ReceiptItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908BE26FD252A00EDA793 /* ReceiptItemModel.swift */; };
+		011908C026FD252A00EDA793 /* ReceiptItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908BE26FD252A00EDA793 /* ReceiptItemModel.swift */; };
+		011908C126FD252A00EDA793 /* ReceiptItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908BE26FD252A00EDA793 /* ReceiptItemModel.swift */; };
+		011908C326FD401500EDA793 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908C226FD401500EDA793 /* ReceiptCell.swift */; };
+		011908C426FD401500EDA793 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908C226FD401500EDA793 /* ReceiptCell.swift */; };
+		011908C526FD401500EDA793 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908C226FD401500EDA793 /* ReceiptCell.swift */; };
+		011908C826FD4C7800EDA793 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908C726FD4C7800EDA793 /* DashLine.swift */; };
+		011908C926FD4C7800EDA793 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908C726FD4C7800EDA793 /* DashLine.swift */; };
+		011908CA26FD4C7800EDA793 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908C726FD4C7800EDA793 /* DashLine.swift */; };
+		011908CC26FD612600EDA793 /* ReceiptProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908CB26FD612600EDA793 /* ReceiptProductCell.swift */; };
+		011908CD26FD612600EDA793 /* ReceiptProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908CB26FD612600EDA793 /* ReceiptProductCell.swift */; };
+		011908CE26FD612600EDA793 /* ReceiptProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908CB26FD612600EDA793 /* ReceiptProductCell.swift */; };
+		011908D126FE4E9A00EDA793 /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D026FE4E9A00EDA793 /* KnobView.swift */; };
+		011908D226FE4E9A00EDA793 /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D026FE4E9A00EDA793 /* KnobView.swift */; };
+		011908D326FE4E9A00EDA793 /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D026FE4E9A00EDA793 /* KnobView.swift */; };
+		011908D526FE4F1000EDA793 /* ReceiptScrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D426FE4F1000EDA793 /* ReceiptScrew.swift */; };
+		011908D626FE4F1000EDA793 /* ReceiptScrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D426FE4F1000EDA793 /* ReceiptScrew.swift */; };
+		011908D726FE4F1000EDA793 /* ReceiptScrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D426FE4F1000EDA793 /* ReceiptScrew.swift */; };
+		011908DA26FE5A0900EDA793 /* RecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D926FE5A0900EDA793 /* RecyclerView.swift */; };
+		011908DB26FE5A0900EDA793 /* RecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D926FE5A0900EDA793 /* RecyclerView.swift */; };
+		011908DC26FE5A0900EDA793 /* RecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908D926FE5A0900EDA793 /* RecyclerView.swift */; };
+		011908DE26FE90D900EDA793 /* ExtensionsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908DD26FE90D900EDA793 /* ExtensionsDate.swift */; };
+		011908DF26FE90D900EDA793 /* ExtensionsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908DD26FE90D900EDA793 /* ExtensionsDate.swift */; };
+		011908E026FE90D900EDA793 /* ExtensionsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908DD26FE90D900EDA793 /* ExtensionsDate.swift */; };
+		011908E326FEABAD00EDA793 /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908E226FEABAD00EDA793 /* DockView.swift */; };
+		011908E426FEABAD00EDA793 /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908E226FEABAD00EDA793 /* DockView.swift */; };
+		011908E526FEABAD00EDA793 /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011908E226FEABAD00EDA793 /* DockView.swift */; };
 		016F6C5526F48D4E0032B550 /* VegetoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6C5426F48D4E0032B550 /* VegetoryApp.swift */; };
 		016F6C5726F48D4E0032B550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6C5626F48D4E0032B550 /* ContentView.swift */; };
 		016F6C5926F48D4F0032B550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016F6C5826F48D4F0032B550 /* Assets.xcassets */; };
@@ -37,9 +91,9 @@
 		016F6CA626F4A5120032B550 /* Blurview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CA526F4A5120032B550 /* Blurview.swift */; };
 		016F6CA726F4A5120032B550 /* Blurview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CA526F4A5120032B550 /* Blurview.swift */; };
 		016F6CA826F4A5120032B550 /* Blurview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CA526F4A5120032B550 /* Blurview.swift */; };
-		016F6CAB26F4A7150032B550 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* WallpaperView.swift */; };
-		016F6CAC26F4A7150032B550 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* WallpaperView.swift */; };
-		016F6CAD26F4A7150032B550 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* WallpaperView.swift */; };
+		016F6CAB26F4A7150032B550 /* WallPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* WallPaperView.swift */; };
+		016F6CAC26F4A7150032B550 /* WallPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* WallPaperView.swift */; };
+		016F6CAD26F4A7150032B550 /* WallPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAA26F4A7150032B550 /* WallPaperView.swift */; };
 		016F6CB026F5282B0032B550 /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAF26F5282B0032B550 /* ExtensionsString.swift */; };
 		016F6CB126F5282B0032B550 /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAF26F5282B0032B550 /* ExtensionsString.swift */; };
 		016F6CB226F5282B0032B550 /* ExtensionsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CAF26F5282B0032B550 /* ExtensionsString.swift */; };
@@ -67,6 +121,27 @@
 		016F6CD626F621A00032B550 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CD526F621A00032B550 /* MainMenuView.swift */; };
 		016F6CD726F621A00032B550 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CD526F621A00032B550 /* MainMenuView.swift */; };
 		016F6CD826F621A00032B550 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CD526F621A00032B550 /* MainMenuView.swift */; };
+		016F6CDB26F635640032B550 /* RefrigeratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CDA26F635640032B550 /* RefrigeratorView.swift */; };
+		016F6CDC26F635640032B550 /* RefrigeratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CDA26F635640032B550 /* RefrigeratorView.swift */; };
+		016F6CDD26F635640032B550 /* RefrigeratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CDA26F635640032B550 /* RefrigeratorView.swift */; };
+		016F6CE026F9BE950032B550 /* IsometricViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CDF26F9BE950032B550 /* IsometricViewModifier.swift */; };
+		016F6CE126F9BE950032B550 /* IsometricViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CDF26F9BE950032B550 /* IsometricViewModifier.swift */; };
+		016F6CE226F9BE950032B550 /* IsometricViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CDF26F9BE950032B550 /* IsometricViewModifier.swift */; };
+		016F6CE426F9BEEF0032B550 /* ExtrudeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CE326F9BEEF0032B550 /* ExtrudeModifier.swift */; };
+		016F6CE526F9BEEF0032B550 /* ExtrudeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CE326F9BEEF0032B550 /* ExtrudeModifier.swift */; };
+		016F6CE626F9BEEF0032B550 /* ExtrudeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CE326F9BEEF0032B550 /* ExtrudeModifier.swift */; };
+		016F6CE826F9C2240032B550 /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CE726F9C2240032B550 /* IsometricView.swift */; };
+		016F6CE926F9C2240032B550 /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CE726F9C2240032B550 /* IsometricView.swift */; };
+		016F6CEA26F9C2240032B550 /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CE726F9C2240032B550 /* IsometricView.swift */; };
+		016F6CEC26FA15E70032B550 /* RefrigeratorDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CEB26FA15E70032B550 /* RefrigeratorDoorView.swift */; };
+		016F6CED26FA15E70032B550 /* RefrigeratorDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CEB26FA15E70032B550 /* RefrigeratorDoorView.swift */; };
+		016F6CEE26FA15E70032B550 /* RefrigeratorDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CEB26FA15E70032B550 /* RefrigeratorDoorView.swift */; };
+		016F6CF026FA16080032B550 /* RefrigeratorDoorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CEF26FA16080032B550 /* RefrigeratorDoorType.swift */; };
+		016F6CF126FA16080032B550 /* RefrigeratorDoorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CEF26FA16080032B550 /* RefrigeratorDoorType.swift */; };
+		016F6CF226FA16080032B550 /* RefrigeratorDoorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CEF26FA16080032B550 /* RefrigeratorDoorType.swift */; };
+		016F6CF426FA5A930032B550 /* CubeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CF326FA5A930032B550 /* CubeExample.swift */; };
+		016F6CF526FA5A930032B550 /* CubeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CF326FA5A930032B550 /* CubeExample.swift */; };
+		016F6CF626FA5A930032B550 /* CubeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F6CF326FA5A930032B550 /* CubeExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +162,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0119089626FC170400EDA793 /* RefrigeratorBucketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorBucketView.swift; sourceTree = "<group>"; };
+		0119089A26FC173D00EDA793 /* RefrigeratorBucketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorBucketModel.swift; sourceTree = "<group>"; };
+		0119089F26FC189500EDA793 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		011908A426FC279800EDA793 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		011908A826FC97DB00EDA793 /* PopupViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModifier.swift; sourceTree = "<group>"; };
+		011908AC26FCA4C500EDA793 /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
+		011908B026FCA52A00EDA793 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		011908B626FD099E00EDA793 /* ReceiptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptModel.swift; sourceTree = "<group>"; };
+		011908BA26FD0C3700EDA793 /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
+		011908BE26FD252A00EDA793 /* ReceiptItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItemModel.swift; sourceTree = "<group>"; };
+		011908C226FD401500EDA793 /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
+		011908C726FD4C7800EDA793 /* DashLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLine.swift; sourceTree = "<group>"; };
+		011908CB26FD612600EDA793 /* ReceiptProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProductCell.swift; sourceTree = "<group>"; };
+		011908D026FE4E9A00EDA793 /* KnobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobView.swift; sourceTree = "<group>"; };
+		011908D426FE4F1000EDA793 /* ReceiptScrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScrew.swift; sourceTree = "<group>"; };
+		011908D926FE5A0900EDA793 /* RecyclerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerView.swift; sourceTree = "<group>"; };
+		011908DD26FE90D900EDA793 /* ExtensionsDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsDate.swift; sourceTree = "<group>"; };
+		011908E226FEABAD00EDA793 /* DockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
 		016F6C5126F48D4E0032B550 /* Vegetory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vegetory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016F6C5426F48D4E0032B550 /* VegetoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetoryApp.swift; sourceTree = "<group>"; };
 		016F6C5626F48D4E0032B550 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,7 +202,7 @@
 		016F6C9C26F49C7A0032B550 /* Eulyoo1945-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eulyoo1945-SemiBold.otf"; sourceTree = "<group>"; };
 		016F6C9D26F49C7A0032B550 /* Eulyoo1945-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eulyoo1945-Regular.otf"; sourceTree = "<group>"; };
 		016F6CA526F4A5120032B550 /* Blurview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blurview.swift; sourceTree = "<group>"; };
-		016F6CAA26F4A7150032B550 /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
+		016F6CAA26F4A7150032B550 /* WallPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperView.swift; sourceTree = "<group>"; };
 		016F6CAF26F5282B0032B550 /* ExtensionsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsString.swift; sourceTree = "<group>"; };
 		016F6CB326F52EC50032B550 /* ExtensionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionList.swift; sourceTree = "<group>"; };
 		016F6CB726F53D440032B550 /* MainViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewVM.swift; sourceTree = "<group>"; };
@@ -119,6 +212,13 @@
 		016F6CC926F5D2790032B550 /* MainMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuModel.swift; sourceTree = "<group>"; };
 		016F6CCE26F5E9400032B550 /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 		016F6CD526F621A00032B550 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		016F6CDA26F635640032B550 /* RefrigeratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorView.swift; sourceTree = "<group>"; };
+		016F6CDF26F9BE950032B550 /* IsometricViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsometricViewModifier.swift; sourceTree = "<group>"; };
+		016F6CE326F9BEEF0032B550 /* ExtrudeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrudeModifier.swift; sourceTree = "<group>"; };
+		016F6CE726F9C2240032B550 /* IsometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsometricView.swift; sourceTree = "<group>"; };
+		016F6CEB26FA15E70032B550 /* RefrigeratorDoorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorDoorView.swift; sourceTree = "<group>"; };
+		016F6CEF26FA16080032B550 /* RefrigeratorDoorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorDoorType.swift; sourceTree = "<group>"; };
+		016F6CF326FA5A930032B550 /* CubeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +246,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0119089E26FC174500EDA793 /* RefrigeratorBucket */ = {
+			isa = PBXGroup;
+			children = (
+				0119089A26FC173D00EDA793 /* RefrigeratorBucketModel.swift */,
+			);
+			path = RefrigeratorBucket;
+			sourceTree = "<group>";
+		};
+		011908A326FC219400EDA793 /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				011908A426FC279800EDA793 /* PopupView.swift */,
+				011908A826FC97DB00EDA793 /* PopupViewModifier.swift */,
+				011908B026FCA52A00EDA793 /* RoundedCorner.swift */,
+			);
+			path = PopupView;
+			sourceTree = "<group>";
+		};
+		011908B426FD079200EDA793 /* ReceiptView */ = {
+			isa = PBXGroup;
+			children = (
+				011908BA26FD0C3700EDA793 /* ReceiptView.swift */,
+				011908C226FD401500EDA793 /* ReceiptCell.swift */,
+				011908CB26FD612600EDA793 /* ReceiptProductCell.swift */,
+				011908D426FE4F1000EDA793 /* ReceiptScrew.swift */,
+			);
+			path = ReceiptView;
+			sourceTree = "<group>";
+		};
+		011908B526FD097B00EDA793 /* ReceiptModel */ = {
+			isa = PBXGroup;
+			children = (
+				011908B626FD099E00EDA793 /* ReceiptModel.swift */,
+				011908BE26FD252A00EDA793 /* ReceiptItemModel.swift */,
+			);
+			path = ReceiptModel;
+			sourceTree = "<group>";
+		};
+		011908C626FD4C5B00EDA793 /* DashLine */ = {
+			isa = PBXGroup;
+			children = (
+				011908C726FD4C7800EDA793 /* DashLine.swift */,
+			);
+			path = DashLine;
+			sourceTree = "<group>";
+		};
+		011908CF26FE4E9000EDA793 /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				011908D026FE4E9A00EDA793 /* KnobView.swift */,
+			);
+			path = Knob;
+			sourceTree = "<group>";
+		};
+		011908D826FE59FE00EDA793 /* RecyclerView */ = {
+			isa = PBXGroup;
+			children = (
+				011908D926FE5A0900EDA793 /* RecyclerView.swift */,
+			);
+			path = RecyclerView;
+			sourceTree = "<group>";
+		};
+		011908E126FEAB9F00EDA793 /* DockView */ = {
+			isa = PBXGroup;
+			children = (
+				011908E226FEABAD00EDA793 /* DockView.swift */,
+			);
+			path = DockView;
+			sourceTree = "<group>";
+		};
 		016F6C4826F48D4E0032B550 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +391,14 @@
 		016F6C8026F491AF0032B550 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				011908E126FEAB9F00EDA793 /* DockView */,
+				011908D826FE59FE00EDA793 /* RecyclerView */,
+				011908CF26FE4E9000EDA793 /* Knob */,
+				011908C626FD4C5B00EDA793 /* DashLine */,
+				011908B426FD079200EDA793 /* ReceiptView */,
+				011908A326FC219400EDA793 /* PopupView */,
+				016F6CDE26F928B40032B550 /* Isometric */,
+				016F6CD926F635430032B550 /* RefrigeratorView */,
 				016F6CCD26F5E92F0032B550 /* NeumorphicView */,
 				016F6CC326F5D1280032B550 /* GridView */,
 				016F6CA426F4A5050032B550 /* BlurView */,
@@ -232,6 +410,8 @@
 		016F6C8126F491C70032B550 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				011908B526FD097B00EDA793 /* ReceiptModel */,
+				0119089E26FC174500EDA793 /* RefrigeratorBucket */,
 				016F6CC826F5D1590032B550 /* MainMenu */,
 				016F6C8626F4924C0032B550 /* TopBar */,
 			);
@@ -290,7 +470,7 @@
 				016F6CD426F6218A0032B550 /* Profile */,
 				016F6CD326F621820032B550 /* Post */,
 				016F6CD226F621730032B550 /* Main */,
-				016F6CAA26F4A7150032B550 /* WallpaperView.swift */,
+				016F6CAA26F4A7150032B550 /* WallPaperView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +482,8 @@
 				016F6CB326F52EC50032B550 /* ExtensionList.swift */,
 				016F6CBB26F544250032B550 /* ExtensionVM.swift */,
 				016F6CBF26F5CDB50032B550 /* ExtensionsCGFloat.swift */,
+				011908AC26FCA4C500EDA793 /* ExtensionsView.swift */,
+				011908DD26FE90D900EDA793 /* ExtensionsDate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,6 +516,7 @@
 			isa = PBXGroup;
 			children = (
 				016F6CD526F621A00032B550 /* MainMenuView.swift */,
+				0119089F26FC189500EDA793 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -350,6 +533,28 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		016F6CD926F635430032B550 /* RefrigeratorView */ = {
+			isa = PBXGroup;
+			children = (
+				016F6CDA26F635640032B550 /* RefrigeratorView.swift */,
+				016F6CEB26FA15E70032B550 /* RefrigeratorDoorView.swift */,
+				016F6CEF26FA16080032B550 /* RefrigeratorDoorType.swift */,
+				016F6CF326FA5A930032B550 /* CubeExample.swift */,
+				0119089626FC170400EDA793 /* RefrigeratorBucketView.swift */,
+			);
+			path = RefrigeratorView;
+			sourceTree = "<group>";
+		};
+		016F6CDE26F928B40032B550 /* Isometric */ = {
+			isa = PBXGroup;
+			children = (
+				016F6CDF26F9BE950032B550 /* IsometricViewModifier.swift */,
+				016F6CE326F9BEEF0032B550 /* ExtrudeModifier.swift */,
+				016F6CE726F9C2240032B550 /* IsometricView.swift */,
+			);
+			path = Isometric;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,20 +704,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011908B726FD099E00EDA793 /* ReceiptModel.swift in Sources */,
 				016F6C5726F48D4E0032B550 /* ContentView.swift in Sources */,
-				016F6CAB26F4A7150032B550 /* WallpaperView.swift in Sources */,
+				011908A026FC189500EDA793 /* MainView.swift in Sources */,
+				011908CC26FD612600EDA793 /* ReceiptProductCell.swift in Sources */,
+				011908C826FD4C7800EDA793 /* DashLine.swift in Sources */,
+				011908AD26FCA4C500EDA793 /* ExtensionsView.swift in Sources */,
+				016F6CAB26F4A7150032B550 /* WallPaperView.swift in Sources */,
 				016F6CD626F621A00032B550 /* MainMenuView.swift in Sources */,
+				016F6CE026F9BE950032B550 /* IsometricViewModifier.swift in Sources */,
 				016F6CC026F5CDB50032B550 /* ExtensionsCGFloat.swift in Sources */,
 				016F6CC526F5D1450032B550 /* GridView.swift in Sources */,
+				011908DE26FE90D900EDA793 /* ExtensionsDate.swift in Sources */,
+				016F6CDB26F635640032B550 /* RefrigeratorView.swift in Sources */,
+				016F6CF026FA16080032B550 /* RefrigeratorDoorType.swift in Sources */,
+				011908A526FC279800EDA793 /* PopupView.swift in Sources */,
 				016F6CB026F5282B0032B550 /* ExtensionsString.swift in Sources */,
+				011908DA26FE5A0900EDA793 /* RecyclerView.swift in Sources */,
+				011908B126FCA52A00EDA793 /* RoundedCorner.swift in Sources */,
 				016F6CA626F4A5120032B550 /* Blurview.swift in Sources */,
+				011908A926FC97DB00EDA793 /* PopupViewModifier.swift in Sources */,
+				011908C326FD401500EDA793 /* ReceiptCell.swift in Sources */,
 				016F6CB826F53D440032B550 /* MainViewVM.swift in Sources */,
 				016F6C8826F492600032B550 /* TopBarModel.swift in Sources */,
+				0119089726FC170400EDA793 /* RefrigeratorBucketView.swift in Sources */,
+				011908BB26FD0C3700EDA793 /* ReceiptView.swift in Sources */,
+				011908BF26FD252A00EDA793 /* ReceiptItemModel.swift in Sources */,
+				016F6CE426F9BEEF0032B550 /* ExtrudeModifier.swift in Sources */,
+				016F6CE826F9C2240032B550 /* IsometricView.swift in Sources */,
+				016F6CF426FA5A930032B550 /* CubeExample.swift in Sources */,
+				011908D126FE4E9A00EDA793 /* KnobView.swift in Sources */,
 				016F6C8426F491F70032B550 /* TopBarView.swift in Sources */,
 				016F6CCA26F5D2790032B550 /* MainMenuModel.swift in Sources */,
 				016F6CBC26F544250032B550 /* ExtensionVM.swift in Sources */,
+				011908D526FE4F1000EDA793 /* ReceiptScrew.swift in Sources */,
 				016F6CB426F52EC50032B550 /* ExtensionList.swift in Sources */,
 				016F6C5526F48D4E0032B550 /* VegetoryApp.swift in Sources */,
+				0119089B26FC173D00EDA793 /* RefrigeratorBucketModel.swift in Sources */,
+				016F6CEC26FA15E70032B550 /* RefrigeratorDoorView.swift in Sources */,
+				011908E326FEABAD00EDA793 /* DockView.swift in Sources */,
 				016F6CCF26F5E9400032B550 /* NeumorphicView.swift in Sources */,
 				016F6C8A26F4982D0032B550 /* TopBarItem.swift in Sources */,
 			);
@@ -523,17 +753,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				016F6CB926F53D440032B550 /* MainViewVM.swift in Sources */,
+				011908D226FE4E9A00EDA793 /* KnobView.swift in Sources */,
+				011908B826FD099E00EDA793 /* ReceiptModel.swift in Sources */,
+				016F6CE126F9BE950032B550 /* IsometricViewModifier.swift in Sources */,
 				016F6C6726F48D4F0032B550 /* VegetoryTests.swift in Sources */,
+				016F6CF126FA16080032B550 /* RefrigeratorDoorType.swift in Sources */,
+				011908B226FCA52A00EDA793 /* RoundedCorner.swift in Sources */,
+				011908DF26FE90D900EDA793 /* ExtensionsDate.swift in Sources */,
+				0119089826FC170400EDA793 /* RefrigeratorBucketView.swift in Sources */,
+				011908CD26FD612600EDA793 /* ReceiptProductCell.swift in Sources */,
 				016F6CC126F5CDB50032B550 /* ExtensionsCGFloat.swift in Sources */,
 				016F6CCB26F5D2790032B550 /* MainMenuModel.swift in Sources */,
-				016F6CAC26F4A7150032B550 /* WallpaperView.swift in Sources */,
+				011908A126FC189500EDA793 /* MainView.swift in Sources */,
+				016F6CF526FA5A930032B550 /* CubeExample.swift in Sources */,
+				016F6CE526F9BEEF0032B550 /* ExtrudeModifier.swift in Sources */,
+				016F6CED26FA15E70032B550 /* RefrigeratorDoorView.swift in Sources */,
+				011908E426FEABAD00EDA793 /* DockView.swift in Sources */,
+				011908C926FD4C7800EDA793 /* DashLine.swift in Sources */,
+				011908AE26FCA4C500EDA793 /* ExtensionsView.swift in Sources */,
+				016F6CDC26F635640032B550 /* RefrigeratorView.swift in Sources */,
+				016F6CAC26F4A7150032B550 /* WallPaperView.swift in Sources */,
+				016F6CE926F9C2240032B550 /* IsometricView.swift in Sources */,
 				016F6CD026F5E9400032B550 /* NeumorphicView.swift in Sources */,
+				011908DB26FE5A0900EDA793 /* RecyclerView.swift in Sources */,
 				016F6CD726F621A00032B550 /* MainMenuView.swift in Sources */,
+				011908AA26FC97DB00EDA793 /* PopupViewModifier.swift in Sources */,
 				016F6CB126F5282B0032B550 /* ExtensionsString.swift in Sources */,
+				011908C026FD252A00EDA793 /* ReceiptItemModel.swift in Sources */,
 				016F6CB526F52EC50032B550 /* ExtensionList.swift in Sources */,
 				016F6CA726F4A5120032B550 /* Blurview.swift in Sources */,
 				016F6CC626F5D1450032B550 /* GridView.swift in Sources */,
+				0119089C26FC173D00EDA793 /* RefrigeratorBucketModel.swift in Sources */,
 				016F6CBD26F544250032B550 /* ExtensionVM.swift in Sources */,
+				011908A626FC279800EDA793 /* PopupView.swift in Sources */,
+				011908C426FD401500EDA793 /* ReceiptCell.swift in Sources */,
+				011908BC26FD0C3700EDA793 /* ReceiptView.swift in Sources */,
+				011908D626FE4F1000EDA793 /* ReceiptScrew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,17 +797,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				016F6CBA26F53D440032B550 /* MainViewVM.swift in Sources */,
+				011908D326FE4E9A00EDA793 /* KnobView.swift in Sources */,
+				011908B926FD099E00EDA793 /* ReceiptModel.swift in Sources */,
+				016F6CE226F9BE950032B550 /* IsometricViewModifier.swift in Sources */,
 				016F6C7226F48D4F0032B550 /* VegetoryUITests.swift in Sources */,
+				016F6CF226FA16080032B550 /* RefrigeratorDoorType.swift in Sources */,
+				011908B326FCA52A00EDA793 /* RoundedCorner.swift in Sources */,
+				011908E026FE90D900EDA793 /* ExtensionsDate.swift in Sources */,
+				0119089926FC170400EDA793 /* RefrigeratorBucketView.swift in Sources */,
+				011908CE26FD612600EDA793 /* ReceiptProductCell.swift in Sources */,
 				016F6CC226F5CDB50032B550 /* ExtensionsCGFloat.swift in Sources */,
 				016F6CCC26F5D2790032B550 /* MainMenuModel.swift in Sources */,
-				016F6CAD26F4A7150032B550 /* WallpaperView.swift in Sources */,
+				011908A226FC189500EDA793 /* MainView.swift in Sources */,
+				016F6CF626FA5A930032B550 /* CubeExample.swift in Sources */,
+				016F6CE626F9BEEF0032B550 /* ExtrudeModifier.swift in Sources */,
+				016F6CEE26FA15E70032B550 /* RefrigeratorDoorView.swift in Sources */,
+				011908E526FEABAD00EDA793 /* DockView.swift in Sources */,
+				011908CA26FD4C7800EDA793 /* DashLine.swift in Sources */,
+				011908AF26FCA4C500EDA793 /* ExtensionsView.swift in Sources */,
+				016F6CDD26F635640032B550 /* RefrigeratorView.swift in Sources */,
+				016F6CAD26F4A7150032B550 /* WallPaperView.swift in Sources */,
+				016F6CEA26F9C2240032B550 /* IsometricView.swift in Sources */,
 				016F6CD126F5E9400032B550 /* NeumorphicView.swift in Sources */,
+				011908DC26FE5A0900EDA793 /* RecyclerView.swift in Sources */,
 				016F6CD826F621A00032B550 /* MainMenuView.swift in Sources */,
+				011908AB26FC97DB00EDA793 /* PopupViewModifier.swift in Sources */,
 				016F6CB226F5282B0032B550 /* ExtensionsString.swift in Sources */,
+				011908C126FD252A00EDA793 /* ReceiptItemModel.swift in Sources */,
 				016F6CB626F52EC50032B550 /* ExtensionList.swift in Sources */,
 				016F6CA826F4A5120032B550 /* Blurview.swift in Sources */,
 				016F6CC726F5D1450032B550 /* GridView.swift in Sources */,
+				0119089D26FC173D00EDA793 /* RefrigeratorBucketModel.swift in Sources */,
 				016F6CBE26F544250032B550 /* ExtensionVM.swift in Sources */,
+				011908A726FC279800EDA793 /* PopupView.swift in Sources */,
+				011908C526FD401500EDA793 /* ReceiptCell.swift in Sources */,
+				011908BD26FD0C3700EDA793 /* ReceiptView.swift in Sources */,
+				011908D726FE4F1000EDA793 /* ReceiptScrew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

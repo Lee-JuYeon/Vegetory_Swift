@@ -37,51 +37,58 @@ struct ReceiptView: View {
                     }
                 
                 // 영수증 나오는 뷰
-                Text("돋보기 이미지")
+                Rectangle()
+                    .fill(Color("ReceiptToolColour"))
                     .frame(
                         width : getWidth,
-                        height : getHeight,
-                        alignment: .top
+                        height : getHeight
                     )
-                    .background(
+                    .overlay(
                         ZStack{
-                            Color("ReceiptToolColour")
+                            LazyHStack{
+                                Text("전체보기")
+                                    .foregroundColor(Color.black)
+                                    .font(.custom("NotoSansKR-Bold", size: 17))
+                                Image("image_calendar")
+                                    .resizable()
+                                    .frame(
+                                        width : 25,
+                                        height: 25
+                                    )
+                            }
+                            .offset(y: -getHeight/3)
+                            .onTapGesture {
+                                getShows = false
+                                print("popupview로 주문내역 확인")
+                            }
+                            
                             // 좌상단
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(
-                                    width : circleSize,
-                                    height : circleSize,
-                                    alignment : Alignment.topLeading
+                            ReceiptScrew(setCircleSize : circleSize)
+                                .offset(
+                                    x: -getWidth/2 + circleSize,
+                                    y: -getHeight/2 + circleSize
                                 )
-                                .offset(x: -getWidth/2 + circleSize, y: -getHeight/2 + circleSize)
+                           
                             // 좌하단
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(
-                                    width : circleSize,
-                                    height : circleSize,
-                                    alignment : Alignment.topLeading
+                            ReceiptScrew(setCircleSize : circleSize)
+                                .offset(
+                                    x: -getWidth/2 + circleSize,
+                                    y: getHeight/2 - circleSize
                                 )
-                                .offset(x: -getWidth/2 + circleSize, y: getHeight/2 - circleSize)
+
                             // 우상단
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(
-                                    width : circleSize,
-                                    height : circleSize,
-                                    alignment : Alignment.topLeading
+                            ReceiptScrew(setCircleSize : circleSize)
+                                .offset(
+                                    x: getWidth/2 - circleSize,
+                                    y: -getHeight/2 + circleSize
                                 )
-                                .offset(x: getWidth/2 - circleSize, y: -getHeight/2 + circleSize)
+                            
                             // 우하단
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(
-                                    width : circleSize,
-                                    height : circleSize,
-                                    alignment : Alignment.topLeading
+                            ReceiptScrew(setCircleSize : circleSize)
+                                .offset(
+                                    x: getWidth/2 - circleSize,
+                                    y: getHeight/2 - circleSize
                                 )
-                                .offset(x: getWidth/2 - circleSize, y: getHeight/2 - circleSize)
                         }
                     )
                     .border(Color("ReceiptToolHoleColour"))
@@ -103,12 +110,14 @@ struct ReceiptView: View {
 
                 
                 // 영수증 리스트 뷰
-                ScrollView(showsIndicators : false){
-                    LazyVStack(
-                        alignment: HorizontalAlignment.center, spacing: 0
-                    ){
+                RecyclerView(
+                    setAxis: .VERTICAL,
+                    setShowBar: false,
+                    setSpacing: 0,
+                    setHorizontalAlignment : HorizontalAlignment.leading,
+                    setContent: {
                         ForEach(ReceiptModel.DummyReceiptModel()){ model in
-                            ReceiptItemView(
+                            ReceiptCell(
                                 getModel : model,
                                 getWhenItemClick: { receiptUID in
                                     getWhenItemClick("\(receiptUID)")
@@ -116,76 +125,31 @@ struct ReceiptView: View {
                             )
                         }
                     }
-                }
+                )
+                .background(Color.white)
                 .frame(
                     width: getWidth - getPadding - 10,
-                    height: 400
-                )
-                .background(
-                    LinearGradient(
-                        gradient: Gradient(colors: [
-                                            Color.black,
-                                            Color.white,
-                                            Color("ReceiptGradientDark"),
-                                            Color("ReceiptGradientDark"),
-                                            Color("ReceiptGradientLight"),
-                                            Color("ReceiptGradientLight"),
-                                            Color("ReceiptGradientLight"),
-                                            Color("ReceiptGradientLight"),
-                                            Color("ReceiptGradientDark"),
-                                            Color("ReceiptGradientLight"),
-                                            Color("ReceiptGradientLight")]),
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
+                    height : 400
                 )
                 .border(Color("ReceiptShadow"), width: 1)
-                .rotation3DEffect(
-                    .degrees(0), // 몇도를 회전된 상태를 보여줄거냐
-                    axis: (x: 1, y:0, z: 0), // -y, -x축으로 회전시킬것이다.
-                    anchor: UnitPoint.top,
-                    anchorZ:0,
-                    perspective: 0.5 // 원근법
-                )
                 .offset(x: 0, y: 100)
+                .onAppear {
+                    sortByReceiptList()
+                }
             }
         }
     }
+    private func sortByReceiptList(){
+        let isoFormatter = DateFormatter()
+        isoFormatter.dateFormat = "yyyy-MM-dd hh:mm"
+        
+        let receiptList = ReceiptModel.DummyReceiptModel()
+        let dateList = receiptList.compactMap{
+            let result = isoFormatter.date(from: $0.date)
+            print("result : \(result)")
+        }
+        let sortedDateList = dateList.sorted { $0 > $1 }
+
+    }
 }
 
-
-/*
- ZStack{
-     Text("크게보기")
-         .frame(
-             width : getWidth,
-             height : getHeight,
-             alignment: .top
-         )
-         .foregroundColor(Color.black)
-         .font(.custom("KOTRA_BOLD", size: 15))
-     RoundedRectangle(cornerRadius: 5)
-         .fill(Color("ReceiptToolHoleColour"))
-         .frame(
-             width: getWidth - getPadding,
-             height: 5
-         )
-         .padding(.horizontal, getPadding)
-     
- }
- .background(Color("ReceiptToolColour"))
- .frame(
-     width : getWidth,
-     height : getHeight,
-     alignment: .top
- )
- .background(Color("ReceiptToolColour"))
- .offset(x: 0, y: 10)
- .shadow(
-     color: Color("ReceiptShadow"),
-     radius: 5, x: 2, y: 2
- )
- .onTapGesture {
-     getWhenItemClick("크게보기")
- }
- */

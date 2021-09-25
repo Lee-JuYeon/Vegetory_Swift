@@ -35,12 +35,12 @@ extension MainMenuModel {
     static func MainMenuList() -> [MainMenuModel]{
         return [
             MainMenuModel(
-                title: "영수증",
-                description: "영수증으로 편하게 식재료를 갱신해요",
-                image: 1),
-            MainMenuModel(
                 title: "이용내역",
                 description: "지금까지 사용한 내역을 한눈에",
+                image: 1),
+            MainMenuModel(
+                title: "배송조회",
+                description: "배송조회하기",
                 image: 1),
             MainMenuModel(
                 title: "밀키트",

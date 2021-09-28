@@ -16,81 +16,40 @@ struct RefrigeratorView : View {
     
     private let getWidth : CGFloat
     private let getHeight : CGFloat
-    private let getDoorType : DoorType
     @State private var getSide : CGFloat
 
     init(
         setWidth : CGFloat,
         setHeight : CGFloat,
-        setSide : CGFloat,
-        setDoorType : DoorType
+        setSide : CGFloat
     ) {
         self.getWidth = setWidth
         self.getHeight = setHeight
         self.getSide = setSide
-        self.getDoorType = setDoorType
     }
     
-    private func getDoorType(type : DoorType) -> UnitPoint{
-        switch type {
-        case DoorType.LEFT :
-             return  UnitPoint.leading
-        case DoorType.RIGHT :
-             return UnitPoint.trailing
-        }
-    }
         
     var body: some View {
         ZStack{
-            GridView(
-                setDivide: 2,
-                setGridType: GridType.VERTICAL,
-                setItemtype: .flexible(minimum: 20),
-                setSpacing: 5,
-                setContent: {
-                    ForEach(RefrigeratorBucketModel.RefrigeratorBucketList()){ model in
-                        RefrigeratorBucketView(
-                            setModel: model,
-                            setWidth: getWidth / 2,
-                            setHeight: getHeight / 6
-                        )
-                    }
+            RefrigeratorContainerview(getWidth: getWidth, getHeight: getHeight)
+            
+            RefrigeratorDoorView(
+                setWidth: getWidth / 2,
+                setHeight: getHeight,
+                setSide: getSide,
+                setLeftBackView : {
+                    LeftDoorBack(getWidth: getWidth, getHeight: getHeight)
+                },
+                setLeftFrontView : {
+                    LeftDoorFront(getWidth: getWidth, getHeight: getHeight)
+                },
+                setRightBackView : {
+                    RightDoorBack(getWidth: getWidth, getHeight: getHeight)
+                },
+                setRightFrontView : {
+                    RightDoorFront(getWidth: getWidth, getHeight: getHeight)
                 }
             )
-            .frame(
-                minWidth: getWidth,
-                idealWidth: getWidth,
-                maxWidth: getWidth,
-                minHeight: 0,
-                idealHeight: getHeight,
-                maxHeight: .infinity,
-                alignment: .center
-            )
-            .background(
-                Rectangle()
-                    .fill(Color.white)
-                    .border(Color("SideFrameColour"), width: 5)
-            )
-            
-            HStack(
-                alignment : VerticalAlignment.center,
-                spacing: 0
-            ){
-                RefrigeratorDoorView(
-                    setWidth: getWidth / 2,
-                    setHeight: getHeight,
-                    setSide: getSide,
-                    setDoorType: .LEFT,
-                    setDoorImage: "left"
-                )
-                RefrigeratorDoorView(
-                    setWidth: getWidth / 2,
-                    setHeight: getHeight,
-                    setSide: getSide,
-                    setDoorType: .RIGHT,
-                    setDoorImage: "right"
-                )
-            }
         }
         .frame(
             minWidth: 0,
@@ -107,6 +66,19 @@ struct RefrigeratorView : View {
 
 
 /*
+ Rectangle()
+     .stroke(
+         LinearGradient(
+             gradient: Gradient(
+                 colors: [
+                     Color("DoorLight"),
+                     Color("DoorDark")
+                 ]),
+             startPoint: .top,
+             endPoint: .bottom
+         )
+     )
+ 
  VStack {
    Text("Run")
      .onTapGesture {

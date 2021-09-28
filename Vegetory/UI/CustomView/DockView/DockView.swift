@@ -7,32 +7,31 @@
 
 import SwiftUI
 
-struct DockView<GETVIEW : View>: View {
+struct DockView<GETITEMS : View, GETPLATEVIEW : View>: View {
     private var getWidth : CGFloat
     private var getHeight : CGFloat
-    private var getPlateColour : Color
-    private var getView : GETVIEW
+    private var getItems : GETITEMS
+    private var getPlateView : GETPLATEVIEW
     
     init(
         setWidth : CGFloat,
         setHeight : CGFloat,
-        setPlateColour : Color,
-        @ViewBuilder setView : @escaping () -> GETVIEW
+        @ViewBuilder setPlateView : @escaping () -> GETPLATEVIEW,
+        @ViewBuilder setItems : @escaping () -> GETITEMS
     ) {
         self.getWidth = setWidth
-        self.getHeight = setHeight / 20
-        self.getView = setView()
-        self.getPlateColour = setPlateColour
+        self.getHeight = setHeight
+        self.getItems = setItems()
+        self.getPlateView = setPlateView()
     }
     
     var body: some View {
+        let heightBlock = -getHeight/10
         ZStack{
-            Rectangle()
-                .fill(getPlateColour)
-                .border(Color.black, width : 1)
+            getPlateView
                 .frame(
                     width: getWidth - 10,
-                    height:  getHeight * 2
+                    height:  getHeight
                 )
                 .rotation3DEffect(
                     .degrees(-60), // 몇도를 회전된 상태를 보여줄거냐
@@ -41,16 +40,22 @@ struct DockView<GETVIEW : View>: View {
                     anchorZ:0,
                     perspective: -0.5 // 원근법
                 )
-                .offset(x: 0, y: -(getHeight/2))
+                .offset(
+                    x: 0,
+                    y: heightBlock * 1
+                )
 
             LazyHStack(spacing : 10){
-                getView
+                getItems
             }
-            .offset(x: 0, y: -(getHeight/5)*2)
+            .offset(
+                x: 0,
+                y: heightBlock * 5
+            )
         }
         .frame(
             width: getWidth,
-            height:  (getWidth / 20) * 2
+            height: getHeight
         )
     }
 }

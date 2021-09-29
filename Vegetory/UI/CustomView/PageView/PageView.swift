@@ -37,27 +37,31 @@ struct PageView<GetView : View, BACKGROUND : View>: View {
     @GestureState private var translation : CGFloat = 0
     
     var body: some View {
-        GeometryReader { geometry in
-                HStack(spacing: 0) {
-                    getContent
-                }
-                .offset( x: -CGFloat(self.getCurrrentIndex) * geometry.size.width)
-                .offset(x: self.translation)
-                .gesture(
-                    DragGesture()
-                        .updating(self.$translation) { value, state, _ in
-                                   state = value.translation.width
-                            
-                        }.onEnded { value in
-                            let offset = value.translation.width / geometry.size.width
-                            let newIndex = (CGFloat(self.getCurrrentIndex) - offset).rounded()
-                            self.getCurrrentIndex = min(max(Int(newIndex), 0), self.getPageCount - 1)
-                        }
+        HStack(spacing: 0) {
+            self.getContent
+                .frame(
+                    width: getWidth,
+                    height: getHeight
                 )
+                
         }
         .frame(
             width: getWidth,
-            height: getHeight
+            height: getHeight,
+            alignment: .leading
+        )
+        .offset( x: -CGFloat(self.getCurrrentIndex) * getWidth)
+        .offset(x: self.translation)
+        .gesture(
+            DragGesture()
+                .updating(self.$translation) { value, state, _ in
+                           state = value.translation.width
+                    
+                }.onEnded { value in
+                    let offset = value.translation.width / getWidth
+                    let newIndex = (CGFloat(self.getCurrrentIndex) - offset).rounded()
+                    self.getCurrrentIndex = min(max(Int(newIndex), 0), self.getPageCount - 1)
+                }
         )
         .background(getBackground)
         .onAppear {
